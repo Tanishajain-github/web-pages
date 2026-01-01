@@ -1,0 +1,42 @@
+* {
+ margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'helvetica nueue';
+}
+htmt,body {
+ height:100%;
+ width:100%;
+}
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    z-index: 15;
+
+}
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+     position: absolute;
+    left: 65%;
+    top: 30%;
+    z-index: 10;
+
+
+}
+#box3{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left:50%;
+   transform: translate(-50%,-50%);
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+}
