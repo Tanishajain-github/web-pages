@@ -1,0 +1,107 @@
+* {
+ margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'helvetica nueue';
+}
+html,body {
+ height:100%;
+ width:100%;
+}
+ /* h1{ 
+     background-color: blue; 
+ } 
+ a{ 
+     background-color: green; 
+ } 
+h3{
+    background-color: crimson;
+    display: inline-block;
+}  */
+#parent{
+    height: 100%;
+    width:100%;
+    background-color: black;
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    grid-template-columns: 20% 50% 20% 10%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.class{
+    background-color: blueviolet;
+    /* border-top: 4px solid black ; */
+    border: 4px solid black;
+}
+/* .class:nth-child(2n){
+    background-color: brown;
+}
+ .class:nth-child(3){
+    background-color: aqua;
+     border-bottom: black; 
+ } 
+.class:nth-child(4){ 
+    background-color: chartreuse;
+}  
+.class:nth-child(3n){
+    background-color: cadetblue;
+} */
+ h1{
+    color: transparent;
+    font-size: 300px;
+    background: linear-gradient(red,blue);
+    background-clip: text;
+
+ }
+ h2{
+    color: transparent;
+    font-size: 300px;
+    background-image: url(https://images.unsplash.com/photo-1557672172-298e090bd0f1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-clip: text;
+    background-size: cover;
+ }
+ h3{
+    font-size: 200px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/uNRQRsQ9H1UHK/giphy.gif);
+    background-size: cover;
+    background-clip: text;
+    text-align: center;
+ }
+ h4{
+    color: transparent;
+    font-size: 200px;
+    -webkit-text-stroke: 4px  red;
+}
+
+#box{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: nowrap;
+    /* overflow: hidden;(bahar nhi jane dega) */
+    overflow: auto;
+}
+#box::-webkit-scrollbar{
+    display: none;
+    /* background-color: aqua; */
+}
+#parent::-webkit-scrollbar-thumb{
+    background-color: blue;
+    /* custom scrollbar bnane ke liye */
+}
+.box1{
+    height:100% ;
+    width: 300px;
+    background-color: red;
+    border-radius: 30px;
+    flex-shrink: 0;
+}
+.box1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}

@@ -1,0 +1,221 @@
+* {
+ margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'helvetica nueue';
+color: white;
+}
+html,body {
+ height:100%;
+ width:100%;
+}
+man{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    /* fr stands for fraction */
+    /* grid-template-columns: 100px minmax(100px,200px); */
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+    grid-template-rows: 1fr 2fr 1fr ;
+    /* row-gap: 20px; */
+    /* column-gap: 20px; */
+    grid-gap: 20px;
+    /* align-items: start; */
+    /* justify-items: end; */
+    /* also use the property justify content justify items and align items align content */
+}
+.class{
+    background-color: crimson;
+    border: 4px solid white;
+}
+.class1{
+     background-color: blue;
+    border: 4px solid white;
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
+#layout1{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 80px 1fr 100px;
+
+    grid-template-areas: " header header"
+                          "aside  section"
+                          "footer footer";
+
+    gap: 10px;
+    padding: 10px;
+}
+#header0{
+    background-color: blue;
+    grid-area: header;
+}
+#aside0{
+    background-color: chocolate;
+    grid-area: aside;
+}
+#section0{
+    background-color: maroon;
+    grid-area: section;
+}
+#footer0{
+    background-color: aqua;
+    grid-area: footer;
+}
+
+#main1{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+
+   grid-template-areas: "header1 header1 header1"
+                        "section1 section1 section1"
+                        " div1 div2 div3";
+
+   grid-gap: 10px;
+   padding: 10px;                     
+}
+#header1{
+    background-color: blueviolet;
+    grid-area: header1;
+}
+#section1{
+    background-color: darkgoldenrod;
+    grid-area: section1;
+}
+#div1{
+    background-color: darkcyan;
+    grid-area: div1;
+}
+#div2{
+    background-color: darkred;
+    grid-area: div2;
+}
+#div3{
+    background-color: orangered;
+    grid-area: div3;
+}
+
+#layout3{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 300px 1fr;
+
+    grid-template-areas: "header2 header2"
+                         "aside2 section2"
+                         "footer2 footer2";
+
+    gap: 10px;
+    padding: 10px;                      
+}
+#header2{
+    background-color: darkolivegreen;
+    grid-area: header2;
+}
+#aside2{
+    background-color: darkmagenta;
+       grid-area: aside2;
+}
+#section2{
+    background-color: maroon;
+       grid-area:section2;
+}
+#footer2{
+    background-color: cadetblue;
+       grid-area:footer2;
+}
+#layout4{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 150px 150px;
+
+    grid-template-areas: "header4 header4 header4"
+                          "section4 section4 section4"
+                          "divleft bottomup divright"
+                          "divleft bottomdown divright" ;
+    gap: 10px;
+    padding: 10px;
+}
+#header4{
+    background-color: cornflowerblue;
+    grid-area: header4;
+}
+#section4{
+    background-color: coral;
+     grid-area:section4;
+}
+#divleft{
+    background-color: aquamarine;
+     grid-area:divleft;
+}
+#bottomup{
+    background-color: bisque;
+     grid-area:bottomup;
+}
+#bottomdown{
+    background-color: cadetblue;
+     grid-area:bottomdown;
+}
+#divright{
+    background-color: chocolate;
+     grid-area:divright;
+}
+#layout5{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: "lefttop topcenter topright"
+                          "lefttop center bottomright"
+                          "leftbottom leftbottom bottomright";
+
+  gap: 10px;
+  padding: 10px;
+
+}
+#lefttop{
+    background-color: cadetblue;
+    grid-area: lefttop;
+}
+#topcenter{
+    background-color: darkgoldenrod;
+    grid-area: topcenter;
+}
+#center{
+    background-color: darkred;
+    grid-area: center;
+}
+#leftbottom{
+    background-color: darkorchid;
+    grid-area: leftbottom;
+}
+#topright{
+    background-color: darkolivegreen;
+    grid-area: topright;
+}
+#bottomright{
+    background-color: fuchsia;
+    grid-area: bottomright;
+}
